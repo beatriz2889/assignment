@@ -5,15 +5,15 @@ node_js:
 cache: npm
 
 install:
-  -npm install
+  - npm install
 
 script:
-  -npm run build
-  -npm run test
+  - npm run build
+  - npm run test
 
 before_install:
-  -"npm config set spin false"
-  -npm i -g now
+  - "npm config set spin false"
+  - npm i -g now
 
 deploy:
   provider: script
